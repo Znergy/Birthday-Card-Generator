@@ -1,5 +1,7 @@
 $(document).ready(function() {
   $("#create").click(function(){
+    // add focus to first checkbox
+    //  $("#greeting").focus();
     // stop refresh
     event.preventDefault();
     // checkbox
@@ -14,5 +16,8 @@ $(document).ready(function() {
     var deliveryDate = $("#delivery").val();
     // page shape "radius"
     var cardShape = $("input:radio[name=radius]:checked").val();
+    // Add all content is added to the final card.
+    $("#greetingName").text(greeting + ", " + name);
+    $("#cardBody").text(messageText);
   });
 });
