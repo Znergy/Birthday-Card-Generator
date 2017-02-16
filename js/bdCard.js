@@ -19,5 +19,6 @@ $(document).ready(function() {
     // Add all content is added to the final card.
     $("#greetingName").text(greeting + ", " + name + "!");
     $("#cardBody").text(messageText);
+    $(".well").css("background-color", cardColor);
   });
 });
