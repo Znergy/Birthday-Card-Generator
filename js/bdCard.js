@@ -17,7 +17,7 @@ $(document).ready(function() {
     // page shape "radius"
     var cardShape = $("input:radio[name=radius]:checked").val();
     // Add all content is added to the final card.
-    $("#greetingName").text(greeting + ", " + name);
+    $("#greetingName").text(greeting + ", " + name + "!");
     $("#cardBody").text(messageText);
   });
 });
