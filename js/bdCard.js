@@ -20,5 +20,8 @@ $(document).ready(function() {
     $("#greetingName").text(greeting + ", " + name + "!");
     $("#cardBody").text(messageText);
     $(".well").css("background-color", cardColor);
+    // At future date add function to change text color.
+    // At future date add toggle function to change look without losing selections.
+    $(".well").css("border-radius", cardShape);
   });
 });
